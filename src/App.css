@@ -1,0 +1,88 @@
+.App{
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.App img{
+    margin-top: 50px;
+    max-width: 350px;
+}
+.principal__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.background{
+    padding: 3rem 1rem;
+    background-color:rgb(255, 255, 255, 0.7);
+    width: 300px; 
+    border-radius: 10px; 
+    font-family: sans-serif;
+    font-size: 14px;
+    color: rgb(45, 48, 48);
+    text-align: center;
+}
+.shadow{
+    filter: drop-shadow(12px 12px rgba(45, 44, 47, 0.5));
+}
+.author{
+    margin-bottom: 75px;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: darkslategray;
+    background-color: rgb(255, 245, 251, 70%);
+    padding: 0.3rem 1.5rem;
+    border-radius: 5px;
+}
+.btn{
+    padding: 0.5rem;
+    width: 120px;
+    border-radius: 10px;
+    border: 2px solid goldenrod;
+    background-color: rgb(207, 6, 6);
+    font-family: sans-serif;
+    font-weight: 600;
+    color: goldenrod;
+    font-size: 14px;
+}
+.btn:hover{
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 50%);
+    border: 2px solid rgb(191, 144, 24);
+    cursor: pointer;
+}
+
+@media (min-width: 550px) {
+    
+    .background{
+        margin-top: 30px;
+        width: 450px;
+        font-size: 18px;
+    }
+    .author{
+        font-size: 16px;
+    }
+    .btn{
+        font-size: 18px;
+        width: 160px;
+    }
+}
+@media (min-width: 850px){
+    
+    .background{
+        font-size: 22px;
+        width: 550px;
+    }
+    .author{
+        font-size: 18px;
+    }
+    .btn{
+        font-size: 22px;
+        width: 200px;
+    }
+}
